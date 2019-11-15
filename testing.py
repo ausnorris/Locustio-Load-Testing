@@ -17,7 +17,7 @@ class UserBehavior(TaskSet):
 
     @task(1)
     def profile(self):
-        self.client.get("/api?address=canberra)
+        self.client.get("/api?address=canberra")
 
 class WebsiteUser(HttpLocust):
     task_set = UserBehavior
