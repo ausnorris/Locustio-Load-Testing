@@ -8,4 +8,4 @@ class QuickstartUser(HttpUser):
     def index_page(self):
         self.client.get("/")
         self.client.get("/about")
-        self.client.get("/weather?address=Canberra")
+        self.client.get("/weather/Canberra")
