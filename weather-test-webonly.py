@@ -6,6 +6,6 @@ class QuickstartUser(HttpUser):
 
     @task
     def index_page(self):
-        self.client.get("/")
-        self.client.get("/about")
-        self.client.get("/weather/Canberra")
+        self.client.get(verify=False, "/")
+        self.client.get(verify=False, "/about")
+        self.client.get(verify=False, "/weather/Canberra")
